@@ -1,5 +1,9 @@
 lista = [2, 4, 7, 2, 3, 3, 1, 0, 2, 6]
+numRep = 0
+numFrequente = 0
 
-count2 = lista.count(2)
-for i in range(0,1):
-    print(f"dada a lista {lista}:\no numero {lista[0]} se repete: {count2} vezes")
+for i in lista:
+    if lista.count(i) > numFrequente:
+        numFrequente += 1
+        numRep = i
+print(f"dada a lista {lista}:\no numero {numRep} se repete mais vezes")
